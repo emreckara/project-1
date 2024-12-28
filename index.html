@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💩 Poop Earnings Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💩 Poop Earnings Calculator</h1>
+        
+        <div class="setup-section" id="setupSection">
+            <h2>First, enter your monthly salary</h2>
+            <div class="input-group">
+                <input type="number" id="monthlySalary" placeholder="Monthly salary">
+                <button id="startButton" class="primary-button">Start Pooping</button>
+            </div>
+        </div>
+
+        <div class="timer-section hidden" id="timerSection">
+            <div class="timer-display">
+                <span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+            <div class="game-container">
+                <canvas id="gameCanvas" width="480" height="250"></canvas>
+                <p class="game-instruction">Press SPACE to jump</p>
+                <p class="score">Score: <span id="gameScore">0</span></p>
+                <button id="tryAgainButton" class="secondary-button hidden">Try Again</button>
+            </div>
+            <button id="stopButton" class="primary-button">Finish</button>
+        </div>
+
+        <div class="results-section hidden" id="resultsSection">
+            <h2>Results</h2>
+            <p>Time spent: <span id="timeSpent">0:00</span></p>
+            <p>Money earned while pooping: <span id="earnings">€0.00</span></p>
+            <p>High Score: <span id="finalScore">0</span></p>
+            <button id="resetButton" class="secondary-button">Start New Session</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
